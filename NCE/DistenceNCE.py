@@ -52,7 +52,7 @@ class DistenceNCE(nn.Module):
 
 
                 query = (l + ab) / 2.
-                query.div_(l.norm(dim=1, keepdim=True))
+                query.div_(query.norm(dim=1, keepdim=True))
 
 
 
